@@ -29,6 +29,9 @@ public class PlayerControl : MonoBehaviour
     private bool CanJump = true;
 
     public bool CanControl = true;
+    [SerializeField]
+    private static float _Health = 100;
+
     public static PlayerControl PlayerInstance = null;
     //--------------------------------
     public static float Health
@@ -50,8 +53,7 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    [SerializeField]
-    private static float _Health = 100f;
+
     //--------------------------------
     // 初始化
     void Awake()
